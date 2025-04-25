@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JEFF EN YUSUF</title>
-</head>
-<body>
-    
-</body>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steen Papier Schaar Game</title>
+    <link rel="stylesheet" href="./src/styles/main.css" />
+  </head>
+  <body>
+    <div class="flex_container">
+      <div class="container">
+        <h1>Steen Papier Schaar</h1>
+
+        <div class="scoreboard">
+          <div class="score">
+            <p>Jij: <span id="player-score">0</span></p>
+          </div>
+          <div class="score">
+            <p>Computer: <span id="computer-score">0</span></p>
+          </div>
+        </div>
+
+        <div class="arena">
+          <div class="player-box">
+            <div class="avatar">🧑</div>
+            <div id="player-choice" class="choice"></div>
+          </div>
+
+          <div class="versus">VS</div>
+
+          <div class="player-box">
+            <div class="avatar">🤖</div>
+            <div id="computer-choice" class="choice"></div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button data-choice="steen">🪨</button>
+          <button data-choice="papier">📄</button>
+          <button data-choice="schaar">✂️</button>
+        </div>
+
+        <div id="result-message" class="result-message">
+          Kies een optie om te starten!
+        </div>
+      </div>
+    </div>
+    <div class="flex_container">
+      <button class="nav_button"><a href="tutorial.html">tutorial</a></button>
+    </div>
+
+    <script src="src/scripts/main.js"></script>
+  </body>
 </html>
