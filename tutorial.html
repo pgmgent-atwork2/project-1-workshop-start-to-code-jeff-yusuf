@@ -1,12 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workshop-tutorial - Start To Code - Jeff en Yusuf</title>
-    <link rel="stylesheet" href="src/styles/totorial.css">
-</head>
-<body>
-    
-</body>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial – Steen Papier Schaar Project</title>
+    <link rel="stylesheet" href="./src/styles/totorial.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🪨📄✂️ Steen Papier Schaar – Tutorial</h1>
+      <p>
+        Welkom bij de tutorial van ons project! Dit is een interactieve game
+        gebouwd met <strong>HTML, CSS</strong> en <strong>JavaScript</strong>.
+        Hieronder leggen we uit hoe het spel werkt en hoe het technisch in
+        elkaar zit.
+      </p>
+
+      <h2>🔍 Hoe werkt het spel?</h2>
+      <ul>
+        <li>Jij kiest één van de drie opties: Steen, Papier of Schaar.</li>
+        <li>De computer kiest automatisch ook één van de drie opties.</li>
+        <li>Beide keuzes worden weergegeven bij hun “avatars”.</li>
+        <li>De winnaar wordt bepaald volgens de klassieke regels.</li>
+        <li>Score wordt live bijgehouden.</li>
+      </ul>
+
+      <h2>🛠️ Gebruikte technologieën</h2>
+      <ul>
+        <li><strong>HTML</strong> – structuur van de gamepagina</li>
+        <li><strong>CSS</strong> – styling en layout</li>
+        <li><strong>JavaScript</strong> – logica, scores en interactiviteit</li>
+      </ul>
+
+      <h2>📁 Bestandstructuur</h2>
+      <span
+        >Om te beginnen met coderen, hebben we een code-editor nodig. We zullen
+        <a target="_blank" href="https://code.visualstudio.com/download">Visual Studio Code</a>
+        gebruiken, een handige en gratis code-editor.</span
+      >
+
+      <ul>
+        <li>
+          <h3>1.1</h3>
+          <p>
+            Maak een nieuwe map aan (vb op je bureaublad) en geef als naam
+            <strong>project-rock-paper-scissors</strong>
+          </p>
+          <img
+            class="img__map"
+            src="assets/images/ss-map_structuur.png"
+            alt=""
+          />
+        </li>
+        <li>
+          <h3>1.2</h3>
+          <p>
+            Open het programma
+            <a href="https://code.visualstudio.com/download"
+              >Visual Studio Code</a
+            >
+            gebruiken, een handige en gratis code-editor. en open de folder die
+            je zopas aangemaakt hebt.
+          </p>
+          <img class="img__map" src="assets/images/ss-vscode.png" alt="" />
+        </li>
+
+        <li>
+          <h3>1.3</h3>
+          <p>Bouw onderstaande mappen- en bestandenstructuur aan</p>
+          <img
+            class="img__map"
+            src="assets/images/ss-vscode_map_schema.png"
+            alt=""
+          />
+        </li>
+
+        <li>
+          <h3>1.4</h3>
+          <p>1.4 Installeer de live server extensie in Visual Studio Code</p>
+          <img
+            class="img__map"
+            src="assets/images/ss-liveserver_extentie.png"
+            alt=""
+          />
+        </li>
+
+        <li>
+          <h3>1.5</h3>
+          <p>
+            Start de live server door rechtsonder de blauwe balk te klikken op
+            Go Live Jouw standaard browser zal nu gestart worden en je zal een
+            blanco webpagina zien!
+          </p>
+        </li>
+      </ul>
+      <pre>
+/project-map/
+│
+├── index.html                     → hoofdgame
+├── tutorial.html                  → uitlegpagina
+├── src/styles/main.css            → alle stijlen
+└── src/scripts/main.js            → spel-logica
+    </pre
+      >
+
+      <h2>💡 Uitleg van de code</h2>
+
+      <h3>1. HTML (index.html)</h3>
+
+      <p>
+        Voeg de volgende HTML-code toe aan het "index.html" bestand om de
+        structuur van de website te creëren:
+      </p>
+      <iframe
+        width="100%"
+        height="300"
+        src="//jsfiddle.net/afyok/tjynbh3u/1/embedded/html/"
+        frameborder="0"
+        loading="lazy"
+        allowtransparency="true"
+        allowfullscreen="true"
+      ></iframe>
+      <p>
+        We maken knoppen met <code>&lt;button&gt;</code>, avatars met emoji en
+        gebruiken <code>div</code> elementen om speler en computer te tonen.
+      </p>
+
+      <h3>2. CSS (style.css)</h3>
+      <p>
+        We maken gebruik van Flexbox om elementen netjes te positioneren.
+        Kleuren en animaties maken het speelser.
+      </p>
+
+      <iframe
+        width="100%"
+        height="300"
+        src="//jsfiddle.net/afyok/tjynbh3u/1/embedded/css/"
+        frameborder="0"
+        loading="lazy"
+        allowtransparency="true"
+        allowfullscreen="true"
+      ></iframe>
+
+      <h3>3. JavaScript (script.js)</h3>
+      <p>We gebruiken arrays en if-statements om te bepalen wie wint:</p>
+
+      <iframe
+        width="100%"
+        height="300"
+        src="//jsfiddle.net/afyok/tjynbh3u/1/embedded/js/"
+        frameborder="0"
+        loading="lazy"
+        allowtransparency="true"
+        allowfullscreen="true"
+      ></iframe>
+
+      <p>Daarna vergelijken we de keuzes en passen we de score aan.</p>
+
+      <h2>🚀 Mogelijke uitbreidingen</h2>
+      <ul>
+        <li>🎵 Geluidseffecten bij winst/verlies</li>
+        <li>🏆 Game tot 5 punten (einde met winnaar)</li>
+        <li>🌐 Multiplayer via WebSockets (geavanceerd)</li>
+        <li>📱 Responsieve mobiele weergave</li>
+        <li>🎨 Kies je eigen avatar</li>
+      </ul>
+
+      <h2>📬 Vragen?</h2>
+      <p>
+        Heb je vragen of wil je meer uitleg over een stukje code? Laat het
+        weten!
+      </p>
+
+      <hr />
+      <p style="font-size: 0.9em; color: #888">
+        Gemaakt door [Jullie Namen] – Project voor [Jullie School/Opdracht]
+      </p>
+    </div>
+  </body>
 </html>
